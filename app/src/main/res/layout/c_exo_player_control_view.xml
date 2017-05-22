@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/c_exo_player_control_view_load"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:src="@drawable/exo_controls_play" />
+
+
+    <ImageView
+        android:id="@+id/c_exo_player_control_view_play_bt"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:visibility="invisible"
+        android:src="@android:drawable/ic_media_play" />
+
+
+    <LinearLayout
+        android:id="@+id/c_exo_player_control_view_control"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_gravity="bottom"
+        android:background="#66000000"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/c_exo_player_control_view_play"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:scaleType="center"
+            android:src="@drawable/exo_controls_play" />
+
+        <TextView
+            android:id="@+id/c_exo_player_control_view_time_current"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/c_exo_player_control_view_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:max="1000" />
+
+        <TextView
+            android:id="@+id/c_exo_player_control_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/c_exo_player_control_view_full_screen"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:scaleType="center"
+            android:src="@drawable/exo_controls_fastforward" />
+    </LinearLayout>
+
+</merge>
